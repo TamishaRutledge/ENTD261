@@ -8,7 +8,7 @@
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 'Defining the folder to look through'
-objStartFolder = "C:\ENTD261"
+objStartFolder = WScript.arguments(0)
 
 'Make sure the Folder exists'
 exists = fso.FolderExists(objStartFolder)
